@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.07em] flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.06em] flex flex-col min-h-screen`}
       >
         <header className="p-4">
           <h1 className="text-3xl font-bold">Blog của tôi</h1>
@@ -38,11 +38,17 @@ export default function RootLayout({
             <Link href="/blog" className="text-blue-500 hover:underline">
               Blog
             </Link>
+            <Link href="/about" className="text-blue-500 hover:underline">
+              Giới thiệu
+            </Link>
+            <Link href="/about" className="text-blue-500 hover:underline">
+              Liên hệ
+            </Link>
           </nav>
         </header>
         <main className="flex-grow">{children}</main>
         <footer
-          className={`${geistSans.variable} ${geistMono.variable} flex justify-center flex-col items-center p-6`}
+          className={`flex justify-center flex-col items-center p-6`}
         >
           <div className="footer-container grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="col-span-1">

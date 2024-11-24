@@ -34,3 +34,85 @@ footer {
 .footer-container {
   max-width: 1050px;
 }
+
+.home-poster {
+  background-image: url("/home-poster.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.home-poster-content {
+  background: rgba(0, 0, 0, 0.57);
+}
+
+.poster-title,
+.poster-description,
+.poster-action {
+  color: var(--background);
+}
+
+.poster-action {
+  padding: 10px 20px;
+  border: 1px solid var(--background);
+  border-radius: 50px;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  transform: scale(0.5);
+}
+
+.arrows path {
+  stroke: var(--background);
+  fill: transparent;
+  stroke-width: 4px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
