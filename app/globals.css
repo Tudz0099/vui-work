@@ -23,6 +23,11 @@ body {
   min-height: 100vh;
 }
 
+header,
+main {
+  max-width: 1050px;
+}
+
 footer {
   width: 100%;
   background: var(--foreground);
@@ -49,14 +54,22 @@ footer {
 .poster-title,
 .poster-description,
 .poster-action {
-  color: var(--background);
+  color: #ffffff;
 }
 
 .poster-action {
-  padding: 10px 20px;
-  border: 1px solid var(--background);
+  padding: 15px 20px;
+  border: 2px solid #ffffff;
   border-radius: 50px;
 }
+
+.view-action {
+  padding: 15px 20px;
+  border: 2px solid var(--foreground);
+  border-radius: 50px;
+  color: var(--foreground);
+}
+
 
 .arrows {
   width: 60px;
@@ -70,6 +83,11 @@ footer {
   stroke-width: 4px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
+}
+
+.arrow-black path {
+  stroke: var(--foreground);
+  fill: transparent;
 }
 
 @keyframes arrow {

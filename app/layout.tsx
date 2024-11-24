@@ -27,21 +27,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.06em] flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.06em] flex flex-col items-center min-h-screen`}
       >
         <header className="p-4">
           <h1 className="text-3xl font-bold">Blog của tôi</h1>
           <nav className="mt-4">
-            <Link href="/" className="mr-4 text-blue-500 hover:underline">
+            <Link href="/" className="mr-4 hover:underline">
               Trang chủ
             </Link>
-            <Link href="/blog" className="text-blue-500 hover:underline">
+            <Link href="/blog" className="mr-4 hover:underline">
               Blog
             </Link>
-            <Link href="/about" className="text-blue-500 hover:underline">
+            <Link href="/about" className="mr-4 hover:underline">
               Giới thiệu
             </Link>
-            <Link href="/about" className="text-blue-500 hover:underline">
+            <Link href="/contact" className="mr-4 hover:underline">
               Liên hệ
             </Link>
           </nav>
