@@ -33,9 +33,9 @@ const Home = () => {
         <h2 className="text-3xl font-bold text-center ">
           Chúng Tôi Chia Sẻ Điều Gì?
         </h2>
-        <p className="text-lg  text-center mt-4">
-          <strong>VuiWork</strong> là nơi bạn có thể tìm thấy những kiến
-          thức thực tế và lời khuyên hữu ích về:
+        <p className="text-lg text-center mt-4">
+          <strong>VuiWork</strong> là nơi bạn có thể tìm thấy những kiến thức
+          thực tế và lời khuyên hữu ích về:
         </p>
 
         {/* Grid Content */}
@@ -154,12 +154,12 @@ const Home = () => {
           tôi. Hãy bắt đầu hành trình phát triển của bạn ngay hôm nay!
         </p>
         <div className="flex justify-center items-center my-6">
-            <svg className="arrows arrow-black">
-              <path className="a1" d="M0 0 L30 32 L60 0"></path>
-              <path className="a2" d="M0 20 L30 52 L60 20"></path>
-              <path className="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-          </div>
+          <svg className="arrows arrow-black">
+            <path className="a1" d="M0 0 L30 32 L60 0"></path>
+            <path className="a2" d="M0 20 L30 52 L60 20"></path>
+            <path className="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </div>
         <Link href="/blog" className="view-action font-bold">
           Xem Các Bài Viết
         </Link>
