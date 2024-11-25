@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.06em] flex flex-col items-center min-h-screen`}
       >
         <header className="p-4">
-          <h1 className="text-3xl font-bold">Blog của tôi</h1>
+          <h1 className="text-3xl font-bold">VuiWork</h1>
           <nav className="mt-4">
             <Link href="/" className="mr-4 hover:underline">
               Trang chủ
