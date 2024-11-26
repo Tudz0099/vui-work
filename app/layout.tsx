@@ -36,7 +36,7 @@ export default function RootLayout({
               Trang chủ
             </Link>
             <Link href="/blog" className="mr-4 hover:underline">
-              Blog
+              Bài viết
             </Link>
             <Link href="/about" className="mr-4 hover:underline">
               Giới thiệu
