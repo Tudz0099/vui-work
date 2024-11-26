@@ -59,6 +59,10 @@ export default function RootLayout({
                 <input className="w-full px-3" type="text"/>
                 <button className="h-full py-2 px-3">Search</button>
               </div>
+
+              <div className="flex flex-col w-full my-12">
+                <span className="w-full text-center signboard flex justify-center items-center">Đừng bỏ lỡ</span>
+              </div>
           </div>
         </div>
 
@@ -67,7 +71,7 @@ export default function RootLayout({
         >
           <div className="footer-container grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="col-span-1">
-              <p>Logo</p>
+              <p>VuiWork</p>
             </div>
 
             <div className="col-span-2">

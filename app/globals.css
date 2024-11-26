@@ -7,6 +7,7 @@
   --foreground: #171717;
   --space: 15px;
   --container: 1050px;
+  --height: 40px;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -46,14 +47,15 @@ footer {
 }
 
 .search-form > input {
-  border: 1px solid;
-  height: 40px;
+  border: 1px solid #abb8c3;
+  height: var(--height);
 }
 
+.signboard,
 .search-form > button {
   background: var(--foreground);
   color: var(--background);
-  height: 40px;
+  height: var(--height);
 }
 
 .home-poster {
