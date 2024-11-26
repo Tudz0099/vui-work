@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const BlogPage = () => {
   const posts = [
     {
@@ -45,9 +47,12 @@ const BlogPage = () => {
               key={post.id}
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
-              <img
-                src={post.image}
+              <Image
+                src="https://vr360.com.vn/uploads/images/5-cach-quang-ba-du-lich.jpg"
+                width={400}
+                height={400}
                 alt={post.title}
+                loading="lazy"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">

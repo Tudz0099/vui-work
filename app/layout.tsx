@@ -27,28 +27,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.06em] flex flex-col items-center min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased tracking-[0.06em] flex flex-col items-center`}
       >
-        <header className="p-4">
+        <div className="body-container w-full p-4">
           <h1 className="text-3xl font-bold">VuiWork</h1>
-          <nav className="mt-4">
-            <Link href="/" className="mr-4 hover:underline">
-              Trang chủ
-            </Link>
-            <Link href="/blog" className="mr-4 hover:underline">
-              Bài viết
-            </Link>
-            <Link href="/about" className="mr-4 hover:underline">
-              Giới thiệu
-            </Link>
-            <Link href="/contact" className="mr-4 hover:underline">
-              Liên hệ
-            </Link>
-          </nav>
-        </header>
-        <main className="flex-grow">{children}</main>
+        </div>
+
+        <div className="body-container grid grid-cols-1 sm:grid-cols-3">
+          <div className="flex flex-col items-center min-h-screen col-span-2">
+            <header className="p-4 w-full">
+              <nav className="navigation py-2 px-3 sm:px-5">
+                <Link href="/" className="sm:mr-4 sm:pr-4 pr-3">
+                  Trang chủ
+                </Link>
+                <Link href="/blog" className="sm:mr-4 sm:pr-4 pr-3">
+                  Bài viết
+                </Link>
+                <Link href="/about" className="sm:mr-4 sm:pr-4 pr-3">
+                  Giới thiệu
+                </Link>
+                <Link href="/contact">
+                  Liên hệ
+                </Link>
+              </nav>
+            </header>
+            <main className="flex-grow">{children}</main>
+          </div>
+
+          <div className="col-span-1 p-4 flex flex-col">
+              <div className="flex items-center w-full search-form">
+                <input className="w-full px-3" type="text"/>
+                <button className="h-full py-2 px-3">Search</button>
+              </div>
+          </div>
+        </div>
+
         <footer
-          className={`flex justify-center flex-col items-center p-6`}
+          className={`flex justify-center flex-col items-center p-6 w-full`}
         >
           <div className="footer-container grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="col-span-1">

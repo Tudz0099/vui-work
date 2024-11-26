@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mt-4">
       {/* Hero Section */}
       <section className="home-poster">
         <div className="py-12 text-center home-poster-content">
